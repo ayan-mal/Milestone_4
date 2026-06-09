@@ -1,6 +1,9 @@
 package Openkart_demo;
 
 import org.testng.annotations.Test;
+
+import Pages.Openkart_POM;
+
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
@@ -17,6 +20,7 @@ public class Openkart_test {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
+	Openkart_POM page;
 	@BeforeTest(alwaysRun=true)
 	  public void beforeTest() {
 		driver = new EdgeDriver();
@@ -27,7 +31,9 @@ public class Openkart_test {
 	  }
   @Test(priority = 1)
   public void Registration() throws InterruptedException {
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/i")).click();
+	  page=new Openkart_POM(driver);
+	  page.Registration();
+	  /*driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/i")).click();
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")).click();
 	  Thread.sleep(2000);
 
@@ -50,7 +56,7 @@ public class Openkart_test {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]")).click();
 
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
 
 		System.out.println(
 		"Registration Completed");
