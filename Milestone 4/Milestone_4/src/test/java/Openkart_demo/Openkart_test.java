@@ -8,10 +8,8 @@ import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -78,34 +76,20 @@ public class Openkart_test {
   }
   @Test(priority = 7)
   public void Order_confirmation() throws InterruptedException {
-	  WebElement search = driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-	  search.sendKeys("iPhone");
-	  Thread.sleep(2000);
-	  driver.findElement(By.xpath("//*[@id=\"search\"]/span/button/i")).click();
-	  Thread.sleep(2000);
-	  try {
-	      driver.findElement(
-	          By.xpath("//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]"))
-	          .click();
-	      System.out.println("Products marked with *** are not available in the desired quantity or not in stock!");
-
-	  } 
-	  catch (Exception e) {
-	      System.out.println("Add To Cart button or confirmation not available");
-	      System.out.println("Test Case Passed By Skipping This Section");
-	  }
-	  Thread.sleep(2000);
+	  page=new Openkart_POM(driver);
+	  page.order_confirmation();
+	  
   }
   @Test(priority = 8)
   public void Log_out() throws InterruptedException {
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a")).click();
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[5]/a")).click();
-	  Thread.sleep(2000);
+	  page=new Openkart_POM(driver);
+	  page.logout();
 	  System.out.println("Log out successfully");
   }
   
   @AfterTest
   public void afterTest() {
+	  driver.close();
 	  System.out.println("Program Done Successfully");
   }
 
