@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-09T17:10:27 IST" name="Default suite" finished-at="2026-06-09T17:10:37 IST" duration-ms="9926">
+  <suite started-at="2026-06-09T17:11:10 IST" name="Default suite" finished-at="2026-06-09T17:12:20 IST" duration-ms="69776">
     <groups>
     </groups>
-    <test started-at="2026-06-09T17:10:27 IST" name="Default test" finished-at="2026-06-09T17:10:37 IST" duration-ms="9926">
+    <test started-at="2026-06-09T17:11:10 IST" name="Default test" finished-at="2026-06-09T17:12:20 IST" duration-ms="69776">
       <class name="Openkart_demo.Openkart_test">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Openkart_demo.Openkart_test@5bda8e08]" started-at="2026-06-09T17:10:27 IST" name="beforeTest" finished-at="2026-06-09T17:10:30 IST" duration-ms="3200" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:10 IST" name="beforeTest" finished-at="2026-06-09T17:11:13 IST" duration-ms="3044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Order_confirmation()[pri:7, instance:Openkart_demo.Openkart_test@5bda8e08]" started-at="2026-06-09T17:10:30 IST" name="Order_confirmation" finished-at="2026-06-09T17:10:37 IST" duration-ms="6672" status="PASS">
+        <test-method signature="Registration()[pri:1, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:13 IST" name="Registration" finished-at="2026-06-09T17:11:24 IST" duration-ms="10836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method signature="Login()[pri:2, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:24 IST" name="Login" finished-at="2026-06-09T17:11:34 IST" duration-ms="9863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Search()[pri:3, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:34 IST" name="Search" finished-at="2026-06-09T17:11:45 IST" duration-ms="11446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method signature="Add_to_cart()[pri:4, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:45 IST" name="Add_to_cart" finished-at="2026-06-09T17:11:52 IST" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_to_cart -->
+        <test-method signature="checkout()[pri:5, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:52 IST" name="checkout" finished-at="2026-06-09T17:11:54 IST" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method signature="Remove_from_cart()[pri:6, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:54 IST" name="Remove_from_cart" finished-at="2026-06-09T17:11:58 IST" duration-ms="3599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Remove_from_cart -->
+        <test-method signature="Order_confirmation()[pri:7, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:58 IST" name="Order_confirmation" finished-at="2026-06-09T17:12:17 IST" duration-ms="19192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Order_confirmation -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Openkart_demo.Openkart_test@5bda8e08]" started-at="2026-06-09T17:10:37 IST" name="afterTest" finished-at="2026-06-09T17:10:37 IST" duration-ms="1" status="PASS">
+        <test-method signature="Log_out()[pri:8, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:12:17 IST" name="Log_out" finished-at="2026-06-09T17:12:20 IST" duration-ms="2539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log_out -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:12:20 IST" name="afterTest" finished-at="2026-06-09T17:12:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
