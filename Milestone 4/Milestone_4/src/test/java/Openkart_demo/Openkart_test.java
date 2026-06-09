@@ -22,6 +22,17 @@ public class Openkart_test {
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")).click();
 	  Thread.sleep(2000);
+	  driver.findElement(By.id("input-firstname")).sendKeys("Ayan");
+	  driver.findElement(By.id("input-lastname")).sendKeys("Mal");
+	  driver.findElement(By.id("input-email")).sendKeys("Ayan1234@gmail.com");
+	  driver.findElement(By.id("input-telephone")).sendKeys("1234567890");
+	  driver.findElement(By.id("input-password")).sendKeys("Ayan@123");
+	  driver.findElement(By.id("input-confirm")).sendKeys("Ayan@123");
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]")).click();
+	  driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]")).click();
+	  Thread.sleep(2000);
+	  System.out.println("Registration Successfull");
   }
   
 
