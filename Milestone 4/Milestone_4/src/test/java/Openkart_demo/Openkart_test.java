@@ -63,16 +63,14 @@ public class Openkart_test {
   }
  @Test(priority = 5)
  public void checkout() throws InterruptedException {
-	 driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[5]/a")).click();
-	 Thread.sleep(2000);
+	 page=new Openkart_POM(driver);
+	  page.Checkout();
 	 System.out.println("Checkout completed");
  }
   @Test(priority = 6)
   public void Remove_from_cart() throws InterruptedException {
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a")).click();
-	  Thread.sleep(2000);
-	  driver.findElement
-	  (By.xpath("//*[@id=\"content\"]/form/div/table/tbody/tr/td[4]/div/span/button[2]/i")).click();
+	  page=new Openkart_POM(driver);
+	  page.Remove_from_cart();
 	  
 	  System.out.println("Product Removed From Cart");
 	
