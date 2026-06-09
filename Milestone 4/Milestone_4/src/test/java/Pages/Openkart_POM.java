@@ -21,6 +21,12 @@ public class Openkart_POM {
 	By cnf_password=By.id("input-confirm");
 	By Checkbox=By.xpath("//*[@id=\"content\"]/form/div/div/input[1]");
 	By submit=By.xpath("//*[@id=\"content\"]/form/div/div/input[2]");
+	//Login
+	By Account1=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/i");
+	By Login=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a");
+	By email=By.id("input-email");
+	By password=By.id("input-password");
+	By btn1=By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input");
 	public Openkart_POM(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -50,7 +56,20 @@ public class Openkart_POM {
 
 			Thread.sleep(3000);
 
-		
+	}
+	public void Login() throws InterruptedException {
+		 driver.findElement(Account1).click();
+		  driver.findElement(Login).click();
+		  Thread.sleep(2000);
+		  driver.findElement(email).sendKeys("Ayan1234@gmail.com");
+
+			Thread.sleep(2000);
+			driver.findElement(password).sendKeys("Ayan@123");
+
+			Thread.sleep(2000);
+			driver.findElement(btn1).click();
+
+			Thread.sleep(3000);
 	}
 
 }
