@@ -27,7 +27,7 @@ public class Openkart_test {
 		wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		driver.get("https://tutorialsninja.com/demo/");
 	  }
-  @Test(priority = 1)
+  @Test(priority = 1,groups= {"smoke"})
   public void Registration() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.Registration();
@@ -35,7 +35,7 @@ public class Openkart_test {
 		"Registration Completed");
 	  
   }
-  @Test(priority = 2)
+  @Test(priority = 2,groups= {"smoke"})
   public void Login() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.Login();
@@ -43,14 +43,14 @@ public class Openkart_test {
 		System.out.println(	"Login Successful");
 	  
   }
-  @Test(priority = 3)
+  @Test(priority = 3,groups= {"smoke"})
   public void Search() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.Search();
 
 		System.out.println(	"Search Completed");
   }
- @Test(priority = 4)
+ @Test(priority = 4,groups= {"smoke"})
   public void Add_to_cart() throws InterruptedException {
 	 page=new Openkart_POM(driver);
 	  page.Add_to_cart();
@@ -59,13 +59,13 @@ public class Openkart_test {
 		System.out.println("Product Added To Cart");
   
   }
- @Test(priority = 5)
+ @Test(priority = 5,groups= {"smoke"})
  public void checkout() throws InterruptedException {
 	 page=new Openkart_POM(driver);
 	  page.Checkout();
 	 System.out.println("Checkout completed");
  }
-  @Test(priority = 6)
+  @Test(priority = 6,groups= {"smoke"})
   public void Remove_from_cart() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.Remove_from_cart();
@@ -74,13 +74,13 @@ public class Openkart_test {
 	
 	  
   }
-  @Test(priority = 7)
+  @Test(priority = 7,groups= {"smoke"})
   public void Order_confirmation() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.order_confirmation();
 	  
   }
-  @Test(priority = 8)
+  @Test(priority = 8,groups= {"smoke"})
   public void Log_out() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.logout();
