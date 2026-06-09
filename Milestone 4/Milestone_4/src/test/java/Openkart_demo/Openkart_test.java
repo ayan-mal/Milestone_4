@@ -54,15 +54,8 @@ public class Openkart_test {
   }
  @Test(priority = 4)
   public void Add_to_cart() throws InterruptedException {
-	  WebElement search =driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-		search.sendKeys("iPhone");
-
-		Thread.sleep(2000);
-		driver.findElement(	By.xpath("//*[@id=\"search\"]/span/button/i")).click();
-
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]")).click();
-		Thread.sleep(2000);
+	 page=new Openkart_POM(driver);
+	  page.Add_to_cart();
 		
 
 		System.out.println("Product Added To Cart");
