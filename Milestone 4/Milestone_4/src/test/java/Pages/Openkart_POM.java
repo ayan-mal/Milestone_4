@@ -38,6 +38,8 @@ public class Openkart_POM {
 	By Search_bar=By.xpath("//*[@id=\"search\"]/input");
 	By Search_btn=By.xpath("//*[@id=\"search\"]/span/button/i");
 	By Add_to_cart=By.xpath("//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]");
+	//Checkout
+	By Checkout=By.xpath("//*[@id=\"top-links\"]/ul/li[5]/a");
 	public Openkart_POM(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -112,6 +114,10 @@ public class Openkart_POM {
 		Thread.sleep(2000);
 		driver.findElement(Add_to_cart).click();
 		Thread.sleep(2000);
+	}
+	public void Checkout() throws InterruptedException {
+		driver.findElement(Checkout).click();
+		 Thread.sleep(2000);
 	}
 
 }
