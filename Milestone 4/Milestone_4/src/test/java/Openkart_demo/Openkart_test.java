@@ -2,6 +2,7 @@ package Openkart_demo;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,7 +18,10 @@ public class Openkart_test {
 		driver.get("https://tutorialsninja.com/demo/");
 		}
   @Test
-  public void f() {
+  public void Registration() throws InterruptedException {
+	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
+	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")).click();
+	  Thread.sleep(2000);
   }
   
 
