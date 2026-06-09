@@ -33,49 +33,14 @@ public class Openkart_test {
   public void Registration() throws InterruptedException {
 	  page=new Openkart_POM(driver);
 	  page.Registration();
-	  /*driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/i")).click();
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")).click();
-	  Thread.sleep(2000);
-
-		driver.findElement(By.id("input-firstname")).sendKeys("Ayan");
-		
-		driver.findElement(By.id("input-lastname")).sendKeys("Mal");
-
-		
-		driver.findElement(By.id("input-email")).sendKeys("Ayan1234@gmail.com");
-		
-		driver.findElement(By.id("input-telephone")).sendKeys("1234567890");
-
-		
-		driver.findElement(By.id("input-password")).sendKeys("Ayan@123");
-		
-		driver.findElement(By.id("input-confirm")).sendKeys("Ayan@123");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]")).click();
-
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]")).click();
-
-		Thread.sleep(3000);*/
-
 		System.out.println(
 		"Registration Completed");
 	  
   }
   @Test(priority = 2)
   public void Login() throws InterruptedException {
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
-	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
-	  Thread.sleep(2000);
-	  driver.findElement(By.id("input-email")).sendKeys("Ayan1234@gmail.com");
-
-		Thread.sleep(2000);
-		driver.findElement(By.id("input-password")).sendKeys("Ayan@123");
-
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input")).click();
-
-		Thread.sleep(3000);
+	  page=new Openkart_POM(driver);
+	  page.Login();
 
 		System.out.println(	"Login Successful");
 	  
