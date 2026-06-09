@@ -47,6 +47,9 @@ public class Openkart_POM {
 	By Search1=By.xpath("//*[@id=\"search\"]/input");
 	By Search2=By.xpath("//*[@id=\"search\"]/span/button/i");
 	By Search3=By.xpath("//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]");
+	//Logout
+	By Log1=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a");
+	By Log2=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[5]/a");
 	public Openkart_POM(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -149,6 +152,11 @@ public class Openkart_POM {
 		      System.out.println("Add To Cart button or confirmation not available");
 		      System.out.println("Test Case Passed By Skipping This Section");
 		  }
+		  Thread.sleep(2000);
+	}
+	public void logout() throws InterruptedException {
+		 driver.findElement(Log1).click();
+		  driver.findElement(Log2).click();
 		  Thread.sleep(2000);
 	}
 
