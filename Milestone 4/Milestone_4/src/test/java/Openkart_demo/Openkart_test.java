@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -35,7 +36,7 @@ public class Openkart_test {
 	  System.out.println("Registration Successfull");
   }
   @Test(priority=2)
-  public void Logib() throws InterruptedException {
+  public void Login() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
 	  Thread.sleep(2000);
@@ -46,6 +47,11 @@ public class Openkart_test {
 	  System.out.println("Login Successfull");
 	  
   }
+  @Test(priority=2)
+  public void Search() throws InterruptedException {
+	  WebElement search=driver.findElement(By.xpath(null))
+  }
+  
   
   
 

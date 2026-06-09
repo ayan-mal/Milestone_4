@@ -5,9 +5,9 @@
     <classes>
       <class name="Openkart_demo.Openkart_test">
         <methods>
+          <include name="Search"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="Registration"/>
         </methods>
       </class> <!-- Openkart_demo.Openkart_test -->
     </classes>
