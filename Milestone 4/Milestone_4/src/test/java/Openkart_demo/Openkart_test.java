@@ -17,7 +17,7 @@ public class Openkart_test {
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
 		}
-  @Test
+  @Test(priority=1)
   public void Registration() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")).click();
@@ -34,7 +34,7 @@ public class Openkart_test {
 	  Thread.sleep(2000);
 	  System.out.println("Registration Successfull");
   }
-  @Test
+  @Test(priority=2)
   public void Logib() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
