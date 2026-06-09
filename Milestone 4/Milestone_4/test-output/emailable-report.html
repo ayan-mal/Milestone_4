@@ -9,14 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">69,776</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,123</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">Openkart_demo.Openkart_test</td><td><a href="#m0">Add_to_cart</a></td><td rowspan="1">1781005305788</td><td rowspan="1">6637</td></tr><tr class="passedeven"><td><a href="#m1">Log_out</a></td><td rowspan="1">1781005337753</td><td rowspan="1">2539</td></tr><tr class="passedeven"><td><a href="#m2">Login</a></td><td rowspan="1">1781005284470</td><td rowspan="1">9863</td></tr><tr class="passedeven"><td><a href="#m3">Order_confirmation</a></td><td rowspan="1">1781005318556</td><td rowspan="1">19192</td></tr><tr class="passedeven"><td><a href="#m4">Registration</a></td><td rowspan="1">1781005273625</td><td rowspan="1">10836</td></tr><tr class="passedeven"><td><a href="#m5">Remove_from_cart</a></td><td rowspan="1">1781005314954</td><td rowspan="1">3599</td></tr><tr class="passedeven"><td><a href="#m6">Search</a></td><td rowspan="1">1781005294338</td><td rowspan="1">11446</td></tr><tr class="passedeven"><td><a href="#m7">checkout</a></td><td rowspan="1">1781005312430</td><td rowspan="1">2519</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Openkart_demo.Openkart_test</td><td><a href="#m0">Order_confirmation</a></td><td rowspan="1">1781008009290</td><td rowspan="1">271</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">Openkart_demo.Openkart_test</td><td><a href="#m1">Add_to_cart</a></td><td rowspan="1">1781007997642</td><td rowspan="1">6650</td></tr><tr class="passedeven"><td><a href="#m2">Log_out</a></td><td rowspan="1">1781008009568</td><td rowspan="1">2508</td></tr><tr class="passedeven"><td><a href="#m3">Login</a></td><td rowspan="1">1781007975895</td><td rowspan="1">10629</td></tr><tr class="passedeven"><td><a href="#m4">Registration</a></td><td rowspan="1">1781007964889</td><td rowspan="1">10987</td></tr><tr class="passedeven"><td><a href="#m5">Remove_from_cart</a></td><td rowspan="1">1781008006792</td><td rowspan="1">2495</td></tr><tr class="passedeven"><td><a href="#m6">Search</a></td><td rowspan="1">1781007986532</td><td rowspan="1">11105</td></tr><tr class="passedeven"><td><a href="#m7">checkout</a></td><td rowspan="1">1781008004297</td><td rowspan="1">2492</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Openkart_demo.Openkart_test#Add_to_cart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Openkart_demo.Openkart_test#Log_out</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Openkart_demo.Openkart_test#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Openkart_demo.Openkart_test#Order_confirmation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">Openkart_demo.Openkart_test#Order_confirmation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=149.0.4022.52)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f043744ba4bfe0ae841b36cbf52eecf4, sendKeysToElement {value=[Ljava.lang.CharSequence;@158d255c, id=f.510248B4E95E9DCC3EF8384D09945351.d.DB204D3E60A3C74F2B094107D78FE7D4.e.268}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.52, fedcm:accounts: true, goog:processID: 7952, ms:edgeOptions: {debuggerAddress: localhost:61404}, msedge: {msedgedriverVersion: 149.0.4022.52 (ebf9b65f6b0d..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 149.0.4022.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f043744ba4bfe0ae841b36cbf52eecf4)] -&gt; xpath: //*[@id=&quot;search&quot;]/input]
+Session ID: f043744ba4bfe0ae841b36cbf52eecf4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:112)
+	at Pages.Openkart_POM.order_confirmation(Openkart_POM.java:140)
+	at Openkart_demo.Openkart_test.Order_confirmation(Openkart_test.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Openkart_demo.Openkart_test#Add_to_cart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Openkart_demo.Openkart_test#Log_out</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Openkart_demo.Openkart_test#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">Openkart_demo.Openkart_test#Registration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">Openkart_demo.Openkart_test#Remove_from_cart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">Openkart_demo.Openkart_test#Search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

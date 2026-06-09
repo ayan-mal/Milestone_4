@@ -1,49 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-09T17:11:10 IST" name="Default suite" finished-at="2026-06-09T17:12:20 IST" duration-ms="69776">
+  <suite started-at="2026-06-09T17:56:01 IST" name="Default suite" finished-at="2026-06-09T17:56:52 IST" duration-ms="50123">
     <groups>
+      <group name="smoke">
+        <method signature="Openkart_test.Registration()[pri:1, instance:Openkart_demo.Openkart_test@77c2494c]" name="Registration" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Login()[pri:2, instance:Openkart_demo.Openkart_test@77c2494c]" name="Login" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Search()[pri:3, instance:Openkart_demo.Openkart_test@77c2494c]" name="Search" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Add_to_cart()[pri:4, instance:Openkart_demo.Openkart_test@77c2494c]" name="Add_to_cart" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.checkout()[pri:5, instance:Openkart_demo.Openkart_test@77c2494c]" name="checkout" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Remove_from_cart()[pri:6, instance:Openkart_demo.Openkart_test@77c2494c]" name="Remove_from_cart" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Order_confirmation()[pri:7, instance:Openkart_demo.Openkart_test@77c2494c]" name="Order_confirmation" class="Openkart_demo.Openkart_test"/>
+        <method signature="Openkart_test.Log_out()[pri:8, instance:Openkart_demo.Openkart_test@77c2494c]" name="Log_out" class="Openkart_demo.Openkart_test"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-06-09T17:11:10 IST" name="Default test" finished-at="2026-06-09T17:12:20 IST" duration-ms="69776">
+    <test started-at="2026-06-09T17:56:01 IST" name="Default test" finished-at="2026-06-09T17:56:52 IST" duration-ms="50123">
       <class name="Openkart_demo.Openkart_test">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:10 IST" name="beforeTest" finished-at="2026-06-09T17:11:13 IST" duration-ms="3044" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:01 IST" name="beforeTest" finished-at="2026-06-09T17:56:04 IST" duration-ms="2882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Registration()[pri:1, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:13 IST" name="Registration" finished-at="2026-06-09T17:11:24 IST" duration-ms="10836" status="PASS">
+        <test-method signature="Registration()[pri:1, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:04 IST" name="Registration" finished-at="2026-06-09T17:56:15 IST" duration-ms="10987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method signature="Login()[pri:2, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:24 IST" name="Login" finished-at="2026-06-09T17:11:34 IST" duration-ms="9863" status="PASS">
+        <test-method signature="Login()[pri:2, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:15 IST" name="Login" finished-at="2026-06-09T17:56:26 IST" duration-ms="10629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Search()[pri:3, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:34 IST" name="Search" finished-at="2026-06-09T17:11:45 IST" duration-ms="11446" status="PASS">
+        <test-method signature="Search()[pri:3, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:26 IST" name="Search" finished-at="2026-06-09T17:56:37 IST" duration-ms="11105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method signature="Add_to_cart()[pri:4, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:45 IST" name="Add_to_cart" finished-at="2026-06-09T17:11:52 IST" duration-ms="6637" status="PASS">
+        <test-method signature="Add_to_cart()[pri:4, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:37 IST" name="Add_to_cart" finished-at="2026-06-09T17:56:44 IST" duration-ms="6650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_to_cart -->
-        <test-method signature="checkout()[pri:5, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:52 IST" name="checkout" finished-at="2026-06-09T17:11:54 IST" duration-ms="2519" status="PASS">
+        <test-method signature="checkout()[pri:5, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:44 IST" name="checkout" finished-at="2026-06-09T17:56:46 IST" duration-ms="2492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->
-        <test-method signature="Remove_from_cart()[pri:6, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:54 IST" name="Remove_from_cart" finished-at="2026-06-09T17:11:58 IST" duration-ms="3599" status="PASS">
+        <test-method signature="Remove_from_cart()[pri:6, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:46 IST" name="Remove_from_cart" finished-at="2026-06-09T17:56:49 IST" duration-ms="2495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Remove_from_cart -->
-        <test-method signature="Order_confirmation()[pri:7, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:11:58 IST" name="Order_confirmation" finished-at="2026-06-09T17:12:17 IST" duration-ms="19192" status="PASS">
+        <test-method signature="Order_confirmation()[pri:7, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:49 IST" name="Order_confirmation" finished-at="2026-06-09T17:56:49 IST" duration-ms="271" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=149.0.4022.52)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f043744ba4bfe0ae841b36cbf52eecf4, sendKeysToElement {value=[Ljava.lang.CharSequence;@158d255c, id=f.510248B4E95E9DCC3EF8384D09945351.d.DB204D3E60A3C74F2B094107D78FE7D4.e.268}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.52, fedcm:accounts: true, goog:processID: 7952, ms:edgeOptions: {debuggerAddress: localhost:61404}, msedge: {msedgedriverVersion: 149.0.4022.52 (ebf9b65f6b0d..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 149.0.4022.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f043744ba4bfe0ae841b36cbf52eecf4)] -> xpath: //*[@id="search"]/input]
+Session ID: f043744ba4bfe0ae841b36cbf52eecf4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=149.0.4022.52)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f043744ba4bfe0ae841b36cbf52eecf4, sendKeysToElement {value=[Ljava.lang.CharSequence;@158d255c, id=f.510248B4E95E9DCC3EF8384D09945351.d.DB204D3E60A3C74F2B094107D78FE7D4.e.268}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.52, fedcm:accounts: true, goog:processID: 7952, ms:edgeOptions: {debuggerAddress: localhost:61404}, msedge: {msedgedriverVersion: 149.0.4022.52 (ebf9b65f6b0d..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 149.0.4022.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f043744ba4bfe0ae841b36cbf52eecf4)] -> xpath: //*[@id="search"]/input]
+Session ID: f043744ba4bfe0ae841b36cbf52eecf4
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:112)
+at Pages.Openkart_POM.order_confirmation(Openkart_POM.java:140)
+at Openkart_demo.Openkart_test.Order_confirmation(Openkart_test.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Order_confirmation -->
-        <test-method signature="Log_out()[pri:8, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:12:17 IST" name="Log_out" finished-at="2026-06-09T17:12:20 IST" duration-ms="2539" status="PASS">
+        <test-method signature="Log_out()[pri:8, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:49 IST" name="Log_out" finished-at="2026-06-09T17:56:52 IST" duration-ms="2508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Log_out -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:12:20 IST" name="afterTest" finished-at="2026-06-09T17:12:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Openkart_demo.Openkart_test@77c2494c]" started-at="2026-06-09T17:56:52 IST" name="afterTest" finished-at="2026-06-09T17:56:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

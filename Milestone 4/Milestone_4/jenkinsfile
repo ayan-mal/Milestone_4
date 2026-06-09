@@ -1,0 +1,72 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven3'
+        jdk 'jdk'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/ayan-mal/Milestone_4.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('Milestone 4') {
+					dir('Milestone_4') {
+                    bat 'mvn clean'
+                }
+                }
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                dir('Milestone 4') {
+					dir('Milestone_4') {
+                    bat 'mvn compile'
+                }
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                dir('Milestone 4') {
+					dir('Milestone_4') {
+                    bat 'mvn test'
+                }
+            }
+            }
+        }
+
+        stage('Package') {
+            steps {
+               dir('Milestone 4') {
+					dir('Milestone_4') {
+                    bat 'mvn package'
+                }
+            }
+            }
+        } 
+    }
+
+    post {
+        always {
+            junit '*/target/surefire-reports/*.xml'
+        }
+
+        success {
+            echo 'Build Successful'
+        }
+
+        failure {
+            echo 'Build Failed'
+        }
+    }
+}

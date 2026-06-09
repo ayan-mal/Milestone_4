@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-525580104\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-890146917\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Openkart_demo.Openkart_test" class="method navigator-link" hash-for-method="Order_confirmation">Order_confirmation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,11 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Openkart_demo.Openkart_test" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Openkart_demo.Openkart_test" class="method navigator-link" hash-for-method="Order_confirmation">Order_confirmation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,6 +162,69 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Openkart_demo.Openkart_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Order_confirmation">
+                  </a> <!-- Order_confirmation -->
+                  <span class="method-name">Order_confirmation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=149.0.4022.52)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f043744ba4bfe0ae841b36cbf52eecf4, sendKeysToElement {value=[Ljava.lang.CharSequence;@158d255c, id=f.510248B4E95E9DCC3EF8384D09945351.d.DB204D3E60A3C74F2B094107D78FE7D4.e.268}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.52, fedcm:accounts: true, goog:processID: 7952, ms:edgeOptions: {debuggerAddress: localhost:61404}, msedge: {msedgedriverVersion: 149.0.4022.52 (ebf9b65f6b0d..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 149.0.4022.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f043744ba4bfe0ae841b36cbf52eecf4)] -&gt; xpath: //*[@id=&quot;search&quot;]/input]
+Session ID: f043744ba4bfe0ae841b36cbf52eecf4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:112)
+	at Pages.Openkart_POM.order_confirmation(Openkart_POM.java:140)
+	at Openkart_demo.Openkart_test.Order_confirmation(Openkart_test.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -178,13 +250,6 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Order_confirmation">
-                  </a> <!-- Order_confirmation -->
-                  <span class="method-name">Order_confirmation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -220,7 +285,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-525580104\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-890146917\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,6 +318,42 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Add_to_cart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Log_out</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Order_confirmation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Registration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Remove_from_cart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Search</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -271,42 +372,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Order_confirmation')
+data.setCell(0, 1, 'Search')
 data.setCell(0, 2, 'Openkart_demo.Openkart_test')
-data.setCell(0, 3, 19192);
+data.setCell(0, 3, 11105);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Search')
+data.setCell(1, 1, 'Registration')
 data.setCell(1, 2, 'Openkart_demo.Openkart_test')
-data.setCell(1, 3, 11446);
+data.setCell(1, 3, 10987);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Registration')
+data.setCell(2, 1, 'Login')
 data.setCell(2, 2, 'Openkart_demo.Openkart_test')
-data.setCell(2, 3, 10836);
+data.setCell(2, 3, 10629);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Login')
+data.setCell(3, 1, 'Add_to_cart')
 data.setCell(3, 2, 'Openkart_demo.Openkart_test')
-data.setCell(3, 3, 9863);
+data.setCell(3, 3, 6650);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Add_to_cart')
+data.setCell(4, 1, 'Log_out')
 data.setCell(4, 2, 'Openkart_demo.Openkart_test')
-data.setCell(4, 3, 6637);
+data.setCell(4, 3, 2508);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Remove_from_cart')
 data.setCell(5, 2, 'Openkart_demo.Openkart_test')
-data.setCell(5, 3, 3599);
+data.setCell(5, 3, 2495);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Log_out')
+data.setCell(6, 1, 'checkout')
 data.setCell(6, 2, 'Openkart_demo.Openkart_test')
-data.setCell(6, 3, 2539);
+data.setCell(6, 3, 2492);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkout')
+data.setCell(7, 1, 'Order_confirmation')
 data.setCell(7, 2, 'Openkart_demo.Openkart_test')
-data.setCell(7, 3, 2519);
+data.setCell(7, 3, 271);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -339,39 +440,41 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Registration</span>
-                <span class="method-start">3084 ms</span>
+                <span class="method-start">2913 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">13929 ms</span>
+                <span class="method-start">13919 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Search</span>
-                <span class="method-start">23797 ms</span>
+                <span class="method-start">24556 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Add_to_cart</span>
-                <span class="method-start">35247 ms</span>
+                <span class="method-start">35666 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkout</span>
-                <span class="method-start">41889 ms</span>
+                <span class="method-start">42321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Remove_from_cart</span>
-                <span class="method-start">44413 ms</span>
+                <span class="method-start">44816 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Order_confirmation</span>
-                <span class="method-start">48015 ms</span>
+                <span class="method-start">47314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Log_out</span>
-                <span class="method-start">67212 ms</span>
+                <span class="method-start">47592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">69756 ms</span>
+                <span class="method-start">50105 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
