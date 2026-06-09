@@ -89,7 +89,7 @@ public class Openkart_test {
   
   @AfterTest
   public void afterTest() {
-	  driver.close();
+	  //driver.close();
 	  System.out.println("Program Done Successfully");
   }
 
