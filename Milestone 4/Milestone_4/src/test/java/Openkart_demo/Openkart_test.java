@@ -34,6 +34,19 @@ public class Openkart_test {
 	  Thread.sleep(2000);
 	  System.out.println("Registration Successfull");
   }
+  @Test
+  public void Logib() throws InterruptedException {
+	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]")).click();
+	  driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
+	  Thread.sleep(2000);
+	  driver.findElement(By.id("input-email")).sendKeys("Ayan1234@gmail.com");
+	  driver.findElement(By.id("input-password")).sendKeys("Ayan@123");
+	  driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input")).click();
+	  Thread.sleep(2000);
+	  System.out.println("Login Successfull");
+	  
+  }
+  
   
 
   @AfterTest
