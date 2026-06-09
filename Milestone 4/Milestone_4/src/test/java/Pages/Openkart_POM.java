@@ -142,9 +142,7 @@ public class Openkart_POM {
 		  driver.findElement(Search2).click();
 		  Thread.sleep(2000);
 		  try {
-		      driver.findElement(
-		          Search3)
-		          .click();
+		      driver.findElement(Search3).click();
 		      System.out.println("Products marked with *** are not available in the desired quantity or not in stock!");
 
 		  } 
