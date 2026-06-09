@@ -47,24 +47,8 @@ public class Openkart_test {
   }
   @Test(priority = 3)
   public void Search() throws InterruptedException {
-	  WebElement search =driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-		search.sendKeys("Canon EOS 5D");
-
-		Thread.sleep(2000);
-		driver.findElement(	By.xpath("//*[@id=\"search\"]/span/button")).click();
-		
-		Thread.sleep(3000);
-		search = driver.findElement(By.xpath("//*[@id='search']/input"));
-		search.clear();
-
-		WebElement search1 =driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-		search1.sendKeys("MacBook");
-
-		Thread.sleep(2000);
-		driver.findElement(	By.xpath("//*[@id=\"search\"]/span/button/i")).click();
-		Thread.sleep(3000);
-		search = driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-		search.clear();
+	  page=new Openkart_POM(driver);
+	  page.Search();
 
 		System.out.println(	"Search Completed");
   }
